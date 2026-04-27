@@ -1,0 +1,2568 @@
+{
+  "meta": {
+    "package": "@auth0/nextjs-auth0",
+    "version": "4.17.0",
+    "status": "active",
+    "generatedAt": "2026-04-17T10:05:59.287Z"
+  },
+  "navigation": [
+    {
+      "section": "Initialisation",
+      "items": [
+        {
+          "id": "auth0client",
+          "title": "Auth0Client",
+          "kind": "class"
+        }
+      ]
+    },
+    {
+      "section": "Auth0Client",
+      "items": [
+        {
+          "id": "middleware",
+          "title": "middleware",
+          "kind": "method"
+        },
+        {
+          "id": "get-session",
+          "title": "getSession",
+          "kind": "method"
+        },
+        {
+          "id": "get-access-token",
+          "title": "getAccessToken",
+          "kind": "method"
+        },
+        {
+          "id": "get-access-token-for-connection",
+          "title": "getAccessTokenForConnection",
+          "kind": "method"
+        },
+        {
+          "id": "update-session",
+          "title": "updateSession",
+          "kind": "method"
+        },
+        {
+          "id": "custom-token-exchange",
+          "title": "customTokenExchange",
+          "kind": "method"
+        },
+        {
+          "id": "mfa",
+          "title": "mfa",
+          "kind": "property"
+        },
+        {
+          "id": "with-page-auth-required",
+          "title": "withPageAuthRequired",
+          "kind": "method"
+        },
+        {
+          "id": "with-api-auth-required",
+          "title": "withApiAuthRequired",
+          "kind": "method"
+        },
+        {
+          "id": "start-interactive-login",
+          "title": "startInteractiveLogin",
+          "kind": "method"
+        },
+        {
+          "id": "get-token-by-backchannel-auth",
+          "title": "getTokenByBackchannelAuth",
+          "kind": "method"
+        },
+        {
+          "id": "connect-account",
+          "title": "connectAccount",
+          "kind": "method"
+        },
+        {
+          "id": "create-fetcher",
+          "title": "createFetcher",
+          "kind": "method"
+        }
+      ]
+    },
+    {
+      "section": "Server",
+      "items": [
+        {
+          "id": "abstract-session-store",
+          "title": "AbstractSessionStore",
+          "kind": "class"
+        },
+        {
+          "id": "auth0client-options",
+          "title": "Auth0ClientOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "pages-router-request",
+          "title": "PagesRouterRequest",
+          "kind": "type"
+        },
+        {
+          "id": "pages-router-response",
+          "title": "PagesRouterResponse",
+          "kind": "type"
+        },
+        {
+          "id": "before-session-saved-hook",
+          "title": "BeforeSessionSavedHook",
+          "kind": "type"
+        },
+        {
+          "id": "on-callback-hook",
+          "title": "OnCallbackHook",
+          "kind": "type"
+        },
+        {
+          "id": "on-callback-context",
+          "title": "OnCallbackContext",
+          "kind": "type"
+        },
+        {
+          "id": "routes-options",
+          "title": "RoutesOptions",
+          "kind": "type"
+        },
+        {
+          "id": "routes",
+          "title": "Routes",
+          "kind": "interface"
+        },
+        {
+          "id": "session-cookie-options",
+          "title": "SessionCookieOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "session-configuration",
+          "title": "SessionConfiguration",
+          "kind": "interface"
+        },
+        {
+          "id": "session-store-options",
+          "title": "SessionStoreOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "session-data",
+          "title": "SessionData",
+          "kind": "interface"
+        },
+        {
+          "id": "session-data-store",
+          "title": "SessionDataStore",
+          "kind": "interface"
+        },
+        {
+          "id": "user",
+          "title": "User",
+          "kind": "interface"
+        },
+        {
+          "id": "logout-token",
+          "title": "LogoutToken",
+          "kind": "type"
+        },
+        {
+          "id": "logout-strategy",
+          "title": "LogoutStrategy",
+          "kind": "type"
+        },
+        {
+          "id": "start-interactive-login-options",
+          "title": "StartInteractiveLoginOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "authorization-parameters",
+          "title": "AuthorizationParameters",
+          "kind": "interface"
+        },
+        {
+          "id": "get-access-token-options",
+          "title": "GetAccessTokenOptions",
+          "kind": "type"
+        },
+        {
+          "id": "access-token-for-connection-options",
+          "title": "AccessTokenForConnectionOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "connection-token-set",
+          "title": "ConnectionTokenSet",
+          "kind": "interface"
+        },
+        {
+          "id": "custom-token-exchange-options",
+          "title": "CustomTokenExchangeOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "custom-token-exchange-response",
+          "title": "CustomTokenExchangeResponse",
+          "kind": "interface"
+        },
+        {
+          "id": "backchannel-authentication-options",
+          "title": "BackchannelAuthenticationOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "backchannel-authentication-response",
+          "title": "BackchannelAuthenticationResponse",
+          "kind": "interface"
+        },
+        {
+          "id": "authorization-details",
+          "title": "AuthorizationDetails",
+          "kind": "interface"
+        },
+        {
+          "id": "connect-account-options",
+          "title": "ConnectAccountOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "mfa-client",
+          "title": "MfaClient",
+          "kind": "interface"
+        },
+        {
+          "id": "authenticator",
+          "title": "Authenticator",
+          "kind": "interface"
+        },
+        {
+          "id": "challenge-response",
+          "title": "ChallengeResponse",
+          "kind": "interface"
+        },
+        {
+          "id": "enroll-options",
+          "title": "EnrollOptions",
+          "kind": "type"
+        },
+        {
+          "id": "enroll-otp-options",
+          "title": "EnrollOtpOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "enroll-oob-options",
+          "title": "EnrollOobOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "enrollment-response",
+          "title": "EnrollmentResponse",
+          "kind": "type"
+        },
+        {
+          "id": "verify-mfa-options",
+          "title": "VerifyMfaOptions",
+          "kind": "type"
+        },
+        {
+          "id": "verify-mfa-options-base",
+          "title": "VerifyMfaOptionsBase",
+          "kind": "interface"
+        },
+        {
+          "id": "verify-mfa-with-otp-options",
+          "title": "VerifyMfaWithOtpOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "verify-mfa-with-oob-options",
+          "title": "VerifyMfaWithOobOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "verify-mfa-with-recovery-code-options",
+          "title": "VerifyMfaWithRecoveryCodeOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "mfa-verify-response",
+          "title": "MfaVerifyResponse",
+          "kind": "interface"
+        },
+        {
+          "id": "domain-resolver",
+          "title": "DomainResolver",
+          "kind": "type"
+        },
+        {
+          "id": "discovery-cache-options",
+          "title": "DiscoveryCacheOptions",
+          "kind": "type"
+        },
+        {
+          "id": "dpop-key-pair",
+          "title": "DpopKeyPair",
+          "kind": "interface"
+        },
+        {
+          "id": "dpop-options",
+          "title": "DpopOptions",
+          "kind": "interface"
+        },
+        {
+          "id": "retry-config",
+          "title": "RetryConfig",
+          "kind": "interface"
+        },
+        {
+          "id": "subject-token-types",
+          "title": "SUBJECT_TOKEN_TYPES",
+          "kind": "enum"
+        },
+        {
+          "id": "grant-type-custom-token-exchange",
+          "title": "GRANT_TYPE_CUSTOM_TOKEN_EXCHANGE",
+          "kind": "constant"
+        },
+        {
+          "id": "default-id-token-claims",
+          "title": "DEFAULT_ID_TOKEN_CLAIMS",
+          "kind": "constant"
+        },
+        {
+          "id": "filter-default-id-token-claims",
+          "title": "filterDefaultIdTokenClaims",
+          "kind": "function"
+        },
+        {
+          "id": "generate-dpop-key-pair",
+          "title": "generateDpopKeyPair",
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "section": "Client",
+      "items": [
+        {
+          "id": "auth0provider",
+          "title": "Auth0Provider",
+          "kind": "function"
+        },
+        {
+          "id": "use-user",
+          "title": "useUser",
+          "kind": "function"
+        },
+        {
+          "id": "client-get-access-token",
+          "title": "getAccessToken",
+          "kind": "function"
+        },
+        {
+          "id": "client-with-page-auth-required",
+          "title": "withPageAuthRequired",
+          "kind": "constant"
+        }
+      ]
+    },
+    {
+      "section": "Testing",
+      "items": [
+        {
+          "id": "generate-session-cookie",
+          "title": "generateSessionCookie",
+          "kind": "function"
+        }
+      ]
+    }
+  ],
+  "pages": {
+    "auth0client": {
+      "id": "auth0client",
+      "title": "Auth0Client",
+      "kind": "class",
+      "section": "Initialisation",
+      "description": "The main server-side Auth0 client. Create one instance and share it across your entire app.\n\nThe recommended pattern is to create the instance in `lib/auth0.ts` and import it wherever needed:\nServer Components, Server Actions, Route Handlers, middleware, and Pages Router API routes.\n\n**Setup using environment variables (recommended):**\n\nSet these in `.env.local`:\n```\nAUTH0_DOMAIN=your-tenant.us.auth0.com\nAUTH0_CLIENT_ID=your_client_id\nAUTH0_CLIENT_SECRET=your_client_secret\nAUTH0_SECRET=a_32_byte_hex_secret\nAPP_BASE_URL=http://localhost:3000\n```\n\nThen create the client with no arguments:\n```ts\n// lib/auth0.ts\nimport { Auth0Client } from '@auth0/nextjs-auth0/server';\n\nexport const auth0 = new Auth0Client();\n```\n\n**Setup passing options directly:**\n```ts\nexport const auth0 = new Auth0Client({\n  domain:       'your-tenant.us.auth0.com',\n  clientId:     'YOUR_CLIENT_ID',\n  clientSecret: 'YOUR_CLIENT_SECRET',\n  secret:       'YOUR_32_BYTE_SECRET',\n  appBaseUrl:   'http://localhost:3000',\n});\n```\n\n**Built-in routes (served by `middleware()`):**\n\nOnce you mount `auth0.middleware(req)` in `middleware.ts`, the following routes are handled automatically:\n\n| Route | Description |\n|---|---|\n| `GET /auth/login` | Redirects the user to Auth0 to log in. Add `?returnTo=/path` to control the post-login redirect. |\n| `GET /auth/logout` | Logs the user out and clears the session. |\n| `GET /auth/callback` | Handles the OAuth callback from Auth0 after login. |\n| `GET /auth/profile` | Returns the logged-in user's profile as JSON. |\n| `GET /auth/access-token` | Returns a fresh access token for the current session as JSON. |\n| `POST /auth/backchannel-logout` | Handles Auth0 backchannel logout notifications. |\n\nTo trigger login from a link or button:\n```tsx\n<a href=\"/auth/login\">Log in</a>\n<a href=\"/auth/login?returnTo=/dashboard\">Log in and go to dashboard</a>\n<a href=\"/auth/logout\">Log out</a>\n```\n\nRoute paths can be customized via the `routes` option in `Auth0ClientOptions`.",
+      "constructor": {
+        "signature": "new Auth0Client(options: Auth0ClientOptions)",
+        "parameters": [
+          {
+            "name": "options",
+            "type": "Auth0ClientOptions",
+            "optional": false,
+            "description": ""
+          }
+        ]
+      }
+    },
+    "middleware": {
+      "id": "middleware",
+      "title": "middleware",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Handles all Auth0 routes (login, logout, callback, profile, access-token) from Next.js middleware.\nCall this from `middleware.ts` at the root of your project so every auth route is served automatically.",
+      "signature": "middleware(req: NextRequest | Request): Promise<NextResponse<unknown>>",
+      "parameters": [
+        {
+          "name": "req",
+          "type": "NextRequest | Request",
+          "optional": false,
+          "description": "The incoming Next.js request from middleware."
+        }
+      ],
+      "returns": {
+        "type": "Promise<NextResponse<unknown>>",
+        "description": "A `NextResponse` handled by the matching auth route, or a passthrough response for all other routes."
+      },
+      "throws": [
+        {
+          "type": "DomainResolutionError",
+          "code": "domain_resolution_error",
+          "description": "if a `DomainResolver` function throws or returns an invalid value. Only applies when using Multiple Custom Domains."
+        },
+        {
+          "type": "DomainValidationError",
+          "code": "domain_validation_error",
+          "description": "if the resolved domain is an IP address, localhost, or contains a path/port. Only applies when using Multiple Custom Domains."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// middleware.ts\nimport type { NextRequest } from 'next/server';\nimport { auth0 } from '@/lib/auth0';\n\nexport async function middleware(req: NextRequest) {\n  return await auth0.middleware(req);\n}\n\nexport const config = {\n  matcher: [\n    // Skip Next.js internals and static files, always run for API routes and pages\n    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',\n  ],\n};"
+        }
+      ]
+    },
+    "get-session": {
+      "id": "get-session",
+      "title": "getSession",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Returns the active session, or `null` if the user is not logged in.\n\n**App Router** (Server Components, Server Actions, Route Handlers): call with no arguments.\nThe SDK reads the session cookie via Next.js `cookies()` automatically.\n\n**Pages Router / middleware**: pass `req` so the SDK can read cookies from the request.\n\nThe session contains:\n- `user`: the logged-in user's profile (`sub`, `name`, `email`, `picture`, etc.)\n- `tokenSet`: the current access token, its expiry, and scope",
+      "signature": "getSession(): Promise<SessionData | null>",
+      "parameters": [],
+      "returns": {
+        "type": "Promise<SessionData | null>",
+        "description": "The session object, or `null` if no active session exists."
+      },
+      "throws": [
+        {
+          "type": "SessionDomainMismatchError",
+          "code": "session_domain_mismatch",
+          "description": "if the session was created on a different domain. Treat this the same as a missing session. Only applies when using Multiple Custom Domains."
+        },
+        {
+          "type": "IssuerValidationError",
+          "code": "issuer_validation_error",
+          "description": "if the ID token issuer does not match the resolved domain. Only applies when using Multiple Custom Domains."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/dashboard/page.tsx\nimport { redirect } from 'next/navigation';\nimport { auth0 } from '@/lib/auth0';\n\nexport default async function Dashboard() {\n  const session = await auth0.getSession();\n  if (!session) redirect('/auth/login');\n\n  return <h1>Welcome, {session.user.name}</h1>;\n}"
+        },
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// pages/api/me.ts\nimport type { NextApiRequest, NextApiResponse } from 'next';\nimport { auth0 } from '@/lib/auth0';\n\nexport default async function handler(req: NextApiRequest, res: NextApiResponse) {\n  const session = await auth0.getSession(req);\n  if (!session) return res.status(401).json({ error: 'Not authenticated' });\n  res.json({ user: session.user });\n}"
+        }
+      ]
+    },
+    "get-access-token": {
+      "id": "get-access-token",
+      "title": "getAccessToken",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Returns the access token for the current user, refreshing it automatically if expired.\n\n**App Router** (Server Components, Server Actions, Route Handlers): call with no `req`/`res`.\nThe SDK reads cookies automatically. Note: if a token refresh happens inside a Server Component,\nthe updated token cannot be persisted because Server Components cannot set cookies. Use middleware\nwith `getAccessToken(req, res)` when persistence after refresh is required.\n\n**Pages Router / middleware**: pass both `req` and `res` so the refreshed token can be\nwritten back to the session cookie.",
+      "signature": "getAccessToken(options?: GetAccessTokenOptions): Promise<{ ... }>",
+      "parameters": [
+        {
+          "name": "options",
+          "type": "GetAccessTokenOptions",
+          "optional": true,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<{ ... }>",
+        "description": "`{ token, expiresAt, scope?, token_type?, audience? }`."
+      },
+      "throws": [
+        {
+          "type": "AccessTokenError",
+          "code": "missing_session",
+          "description": "if the user is not authenticated."
+        },
+        {
+          "type": "AccessTokenError",
+          "code": "missing_refresh_token",
+          "description": "if the token is expired and there is no refresh token."
+        },
+        {
+          "type": "AccessTokenError",
+          "code": "failed_to_refresh_token",
+          "description": "if Auth0 rejects the refresh attempt."
+        },
+        {
+          "type": "MfaRequiredError",
+          "code": "mfa_required",
+          "description": "if Auth0 requires MFA step-up before issuing the token. Catch this and use `err.mfa_token` to drive the MFA flow via `auth0.mfa`. The `err.mfa_requirements` property lists available challenge types and enrollment options."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/api/data/route.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport async function GET() {\n  const { token } = await auth0.getAccessToken();\n  const res = await fetch('https://api.example.com/data', {\n    headers: { Authorization: `Bearer ${token}` },\n  });\n  return Response.json(await res.json());\n}"
+        },
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// pages/api/data.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport default async function handler(req, res) {\n  const { token } = await auth0.getAccessToken(req, res);\n  const apiRes = await fetch('https://api.example.com/data', {\n    headers: { Authorization: `Bearer ${token}` },\n  });\n  res.json(await apiRes.json());\n}"
+        }
+      ]
+    },
+    "get-access-token-for-connection": {
+      "id": "get-access-token-for-connection",
+      "title": "getAccessTokenForConnection",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Returns an access token scoped to a specific social connection (e.g. Google, GitHub).\nUse this when you need to call a third-party provider API on behalf of the logged-in user.\n\n**App Router**: call with `options` only. The SDK reads cookies automatically.\n\n**Pages Router / middleware**: pass `req` and `res` as additional arguments so the refreshed\ntoken can be written back to the session cookie.\n\n**Prerequisite:** The connection must be enabled on your Auth0 application and the user must\nhave authorized it during login.",
+      "signature": "getAccessTokenForConnection(options: AccessTokenForConnectionOptions): Promise<{ ... }>",
+      "parameters": [
+        {
+          "name": "options",
+          "type": "AccessTokenForConnectionOptions",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<{ ... }>",
+        "description": "`{ token, expiresAt, scope? }`."
+      },
+      "throws": [
+        {
+          "type": "AccessTokenForConnectionError",
+          "code": "missing_session",
+          "description": "if the user is not authenticated."
+        },
+        {
+          "type": "AccessTokenForConnectionError",
+          "code": "missing_refresh_token",
+          "description": "if no refresh token is available to exchange."
+        },
+        {
+          "type": "AccessTokenForConnectionError",
+          "code": "failed_to_exchange_refresh_token",
+          "description": "if Auth0 rejects the token exchange."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/api/calendar/route.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport async function GET() {\n  const { token } = await auth0.getAccessTokenForConnection({\n    connection: 'google-oauth2',\n  });\n\n  const res = await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events', {\n    headers: { Authorization: `Bearer ${token}` },\n  });\n  return Response.json(await res.json());\n}"
+        }
+      ]
+    },
+    "update-session": {
+      "id": "update-session",
+      "title": "updateSession",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Overwrites the current user's session. Throws if no session exists.\n\n**App Router** (Server Actions, Route Handlers): pass the updated `session` object only.\nThe SDK writes the new session cookie automatically.\n\n**Pages Router / middleware**: pass `req`, `res`, and the updated `session` so the SDK\ncan write the cookie to the response.",
+      "signature": "updateSession(req: NextRequest | Request | PagesRouterRequest, res: Response | NextResponse<unknown> | PagesRouterResponse, session: SessionData): Promise<void>",
+      "parameters": [
+        {
+          "name": "req",
+          "type": "NextRequest | Request | PagesRouterRequest",
+          "optional": false,
+          "description": "Pages Router or middleware request. Omit in App Router."
+        },
+        {
+          "name": "res",
+          "type": "Response | NextResponse<unknown> | PagesRouterResponse",
+          "optional": false,
+          "description": "Pages Router or middleware response. Omit in App Router."
+        },
+        {
+          "name": "session",
+          "type": "SessionData",
+          "optional": false,
+          "description": "The updated session data. Include the full session shape (spread existing and override fields)."
+        }
+      ],
+      "returns": {
+        "type": "Promise<void>",
+        "description": ""
+      },
+      "throws": [
+        {
+          "type": "Error",
+          "description": "if the user is not authenticated."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/actions/update-name.ts\n'use server';\nimport { auth0 } from '@/lib/auth0';\n\nexport async function updateName(name: string) {\n  const session = await auth0.getSession();\n  if (!session) throw new Error('Not authenticated');\n\n  await auth0.updateSession({\n    ...session,\n    user: { ...session.user, name },\n  });\n}"
+        },
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// pages/api/update-name.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport default async function handler(req, res) {\n  const session = await auth0.getSession(req);\n  if (!session) return res.status(401).end();\n\n  await auth0.updateSession(req, res, {\n    ...session,\n    user: { ...session.user, name: req.body.name },\n  });\n  res.json({ ok: true });\n}"
+        }
+      ]
+    },
+    "custom-token-exchange": {
+      "id": "custom-token-exchange",
+      "title": "customTokenExchange",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Exchanges an external token for Auth0 tokens using Custom Token Exchange (RFC 8693).\n\nThis is a server-only method. It does not create or modify the user's session; the returned\ntokens are for the caller to use directly.",
+      "signature": "customTokenExchange(options: CustomTokenExchangeOptions): Promise<CustomTokenExchangeResponse>",
+      "parameters": [
+        {
+          "name": "options",
+          "type": "CustomTokenExchangeOptions",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<CustomTokenExchangeResponse>",
+        "description": "The exchange response with `accessToken` and optionally `idToken` and `refreshToken`."
+      },
+      "throws": [
+        {
+          "type": "CustomTokenExchangeError",
+          "code": "missing_subject_token",
+          "description": "if `subjectToken` is empty."
+        },
+        {
+          "type": "CustomTokenExchangeError",
+          "code": "invalid_subject_token_type",
+          "description": "if `subjectTokenType` is not a valid URI."
+        },
+        {
+          "type": "CustomTokenExchangeError",
+          "code": "missing_actor_token_type",
+          "description": "if `actorToken` is provided without `actorTokenType`."
+        },
+        {
+          "type": "CustomTokenExchangeError",
+          "code": "exchange_failed",
+          "description": "if Auth0 rejects the exchange."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/api/exchange/route.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport async function POST(req: Request) {\n  const { legacyToken } = await req.json();\n\n  const result = await auth0.customTokenExchange({\n    subjectToken: legacyToken,\n    subjectTokenType: 'urn:acme:legacy-token',\n    audience: 'https://api.example.com',\n  });\n\n  return Response.json({ accessToken: result.accessToken });\n}"
+        }
+      ]
+    },
+    "mfa": {
+      "id": "mfa",
+      "title": "mfa",
+      "kind": "property",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Server-side MFA client. Access this when `getAccessToken()` throws a `MfaRequiredError`\nand you need to drive the MFA challenge-response flow from the server.\n\nMethods:\n- `getAuthenticators({ mfaToken })`: list the user's enrolled MFA factors. Throws `MfaGetAuthenticatorsError` on failure.\n- `challenge({ mfaToken, challengeType, authenticatorId? })`: initiate a challenge. Throws `MfaChallengeError` on failure.\n- `verify({ mfaToken, otp? | oobCode+bindingCode? | recoveryCode? })`: complete the challenge. Throws `MfaVerifyError` (code `\"invalid_grant\"`) on wrong code.\n- `enroll({ mfaToken, authenticatorTypes, ... })`: enroll a new factor. Throws `MfaEnrollmentError` on failure.\n\nAll `auth0.mfa` methods throw `MfaTokenExpiredError` (code `\"mfa_token_expired\"`) if the MFA token has expired,\nand `MfaTokenInvalidError` (code `\"mfa_token_invalid\"`) if the token is malformed or encrypted with a different secret.",
+      "signature": "mfa(): ServerMfaClient",
+      "parameters": [],
+      "returns": {
+        "type": "ServerMfaClient",
+        "description": ""
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/api/token/route.ts\nimport { auth0 } from '@/lib/auth0';\nimport { MfaRequiredError } from '@auth0/nextjs-auth0/server';\n\nexport async function GET() {\n  try {\n    const { token } = await auth0.getAccessToken({ audience: 'https://api.example.com' });\n    return Response.json({ token });\n  } catch (err) {\n    if (err instanceof MfaRequiredError) {\n      const factors = await auth0.mfa.getAuthenticators({ mfaToken: err.mfa_token });\n      const challenge = await auth0.mfa.challenge({\n        mfaToken: err.mfa_token,\n        challengeType: 'otp',\n        authenticatorId: factors[0].id,\n      });\n      return Response.json({ mfaRequired: true, challenge });\n    }\n    throw err;\n  }\n}"
+        }
+      ]
+    },
+    "with-page-auth-required": {
+      "id": "with-page-auth-required",
+      "title": "withPageAuthRequired",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Protects a page from unauthenticated access. Redirects to the login page and returns the\nuser to the original URL after a successful login.\n\n**App Router**: pass an async page function. The SDK invokes it only when a session exists.\nBecause Server Components do not know their own URL, pass `returnTo` explicitly if you need\nthe user to land back on the same page after login.\n\n**Pages Router**: call with no arguments (or an options object) to protect `getServerSideProps`.",
+      "signature": "withPageAuthRequired(fn: AppRouterPageRoute<P>, opts?: WithPageAuthRequiredAppRouterOptions<P>): AppRouterPageRoute<P>",
+      "parameters": [
+        {
+          "name": "fn",
+          "type": "AppRouterPageRoute<P>",
+          "optional": false,
+          "description": "App Router: the async page component to wrap."
+        },
+        {
+          "name": "opts",
+          "type": "WithPageAuthRequiredAppRouterOptions<P>",
+          "optional": true,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "AppRouterPageRoute<P>",
+        "description": ""
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/dashboard/page.tsx\nimport { auth0 } from '@/lib/auth0';\n\nexport default auth0.withPageAuthRequired(\n  async function Dashboard() {\n    const session = await auth0.getSession();\n    return <h1>Welcome, {session!.user.name}</h1>;\n  },\n  { returnTo: '/dashboard' }\n);"
+        },
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// pages/dashboard.tsx\nimport { auth0 } from '@/lib/auth0';\n\nexport const getServerSideProps = auth0.withPageAuthRequired();\n\nexport default function Dashboard({ user }) {\n  return <h1>Welcome, {user.name}</h1>;\n}"
+        }
+      ]
+    },
+    "with-api-auth-required": {
+      "id": "with-api-auth-required",
+      "title": "withApiAuthRequired",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Protects an API route handler. Unauthenticated requests are automatically rejected with\n`401 Unauthorized`. Works with both App Router Route Handlers and Pages Router API routes.",
+      "signature": "withApiAuthRequired(apiRoute: AppRouteHandlerFn | NextApiHandler): { ... }",
+      "parameters": [
+        {
+          "name": "apiRoute",
+          "type": "AppRouteHandlerFn | NextApiHandler",
+          "optional": false,
+          "description": "The handler function to protect."
+        }
+      ],
+      "returns": {
+        "type": "{ ... }",
+        "description": ""
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/api/orders/route.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport const GET = auth0.withApiAuthRequired(async function handler(req) {\n  const session = await auth0.getSession();\n  return Response.json({ user: session!.user });\n});"
+        },
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// pages/api/orders.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport default auth0.withApiAuthRequired(async function handler(req, res) {\n  const session = await auth0.getSession(req);\n  res.json({ user: session!.user });\n});"
+        }
+      ]
+    },
+    "start-interactive-login": {
+      "id": "start-interactive-login",
+      "title": "startInteractiveLogin",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Initiates a login redirect from a Server Action or Route Handler.\nUse when you need to programmatically trigger the login flow rather than\nrelying on the automatic redirect from `withPageAuthRequired`.",
+      "signature": "startInteractiveLogin(options: StartInteractiveLoginOptions): Promise<NextResponse<unknown>>",
+      "parameters": [
+        {
+          "name": "options",
+          "type": "StartInteractiveLoginOptions",
+          "optional": false,
+          "default": "{}",
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<NextResponse<unknown>>",
+        "description": "A `NextResponse` that redirects the user to the Auth0 login page."
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/actions/login.ts\n'use server';\nimport { redirect } from 'next/navigation';\nimport { auth0 } from '@/lib/auth0';\n\nexport async function loginAction() {\n  const res = await auth0.startInteractiveLogin({ returnTo: '/dashboard' });\n  redirect(res.headers.get('location')!);\n}"
+        }
+      ]
+    },
+    "get-token-by-backchannel-auth": {
+      "id": "get-token-by-backchannel-auth",
+      "title": "getTokenByBackchannelAuth",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Authenticates a user via Client-Initiated Backchannel Authentication (CIBA) and returns\nthe token set once the user approves the request on their device.\n\nInitiates the backchannel flow and polls Auth0 until the user approves or the request times out.\nDoes not require the user to be present in the browser session.\n\n**Prerequisite:** CIBA must be enabled in the Auth0 dashboard for your application.",
+      "signature": "getTokenByBackchannelAuth(options: BackchannelAuthenticationOptions): Promise<BackchannelAuthenticationResponse>",
+      "parameters": [
+        {
+          "name": "options",
+          "type": "BackchannelAuthenticationOptions",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<BackchannelAuthenticationResponse>",
+        "description": "The token set, and optionally ID token claims and authorization details."
+      },
+      "throws": [
+        {
+          "type": "BackchannelAuthenticationNotSupportedError",
+          "code": "backchannel_authentication_not_supported_error",
+          "description": "if CIBA is not enabled for your application."
+        },
+        {
+          "type": "BackchannelAuthenticationError",
+          "code": "backchannel_authentication_error",
+          "description": "if Auth0 rejects the request."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/api/backchannel/route.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport async function POST(req: Request) {\n  const { email } = await req.json();\n  const tokens = await auth0.getTokenByBackchannelAuth({\n    loginHint: { format: 'iss_sub', iss: 'https://example.us.auth0.com/', sub: email },\n    scope: 'openid profile email',\n  });\n  return Response.json({ accessToken: tokens.accessToken });\n}"
+        }
+      ]
+    },
+    "connect-account": {
+      "id": "connect-account",
+      "title": "connectAccount",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Starts the Connect Account flow, redirecting the user to Auth0 to authorize linking a\nthird-party social account (e.g. GitHub, Google) to their existing profile.\n\n**Prerequisite:** \"Offline Access\" must be enabled in Connection Permissions for the target\nconnection. The user must have an active session.",
+      "signature": "connectAccount(options: ConnectAccountOptions): Promise<NextResponse<unknown>>",
+      "parameters": [
+        {
+          "name": "options",
+          "type": "ConnectAccountOptions",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<NextResponse<unknown>>",
+        "description": "A `NextResponse` that redirects the user to Auth0 to authorize the connection."
+      },
+      "throws": [
+        {
+          "type": "ConnectAccountError",
+          "code": "missing_session",
+          "description": "if the user is not logged in."
+        },
+        {
+          "type": "ConnectAccountError",
+          "code": "failed_to_initiate",
+          "description": "if starting the connect flow fails. Check `err.cause` for the underlying `MyAccountApiError`."
+        },
+        {
+          "type": "ConnectAccountError",
+          "code": "failed_to_complete",
+          "description": "if completing the connect flow fails. Check `err.cause` for the underlying `MyAccountApiError`."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/actions/connect-github.ts\n'use server';\nimport { redirect } from 'next/navigation';\nimport { auth0 } from '@/lib/auth0';\n\nexport async function connectGitHub() {\n  const res = await auth0.connectAccount({ connection: 'github' });\n  redirect(res.headers.get('location')!);\n}"
+        }
+      ]
+    },
+    "create-fetcher": {
+      "id": "create-fetcher",
+      "title": "createFetcher",
+      "kind": "method",
+      "section": "Auth0Client",
+      "memberOf": "Auth0Client",
+      "description": "Creates an authenticated HTTP client that automatically injects the user's access token\nas a Bearer header on every request and handles token refresh transparently.",
+      "signature": "createFetcher(req: NextRequest | Request | PagesRouterRequest | undefined, options: { ... }): Promise<Fetcher<TOutput>>",
+      "parameters": [
+        {
+          "name": "req",
+          "type": "NextRequest | Request | PagesRouterRequest | undefined",
+          "optional": false,
+          "description": "Request for session context. Pass `undefined` in App Router; required in Pages Router."
+        },
+        {
+          "name": "options",
+          "type": "{ ... }",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<Fetcher<TOutput>>",
+        "description": "A `Fetcher` instance. Call `fetcher.fetchWithAuth(path, init?)` to make authenticated requests."
+      },
+      "throws": [
+        {
+          "type": "AccessTokenError",
+          "description": "(`\"missing_session\"`) if the user is not authenticated."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// app/api/proxy/route.ts\nimport { auth0 } from '@/lib/auth0';\n\nexport async function GET() {\n  const fetcher = await auth0.createFetcher(undefined, {\n    baseUrl: 'https://api.example.com',\n  });\n\n  const res = await fetcher.fetchWithAuth('/users');\n  return Response.json(await res.json());\n}"
+        }
+      ]
+    },
+    "abstract-session-store": {
+      "id": "abstract-session-store",
+      "title": "AbstractSessionStore",
+      "kind": "class",
+      "section": "Server",
+      "description": "Base class for custom session storage. Extend this when you need to persist sessions\nto a database, Redis, or any external store instead of the default encrypted cookie.\n\nImplement three abstract methods: `get`, `set`, and `delete`. Pass your subclass to\n`Auth0Client` via the `sessionStore` option.",
+      "constructor": {
+        "signature": "new AbstractSessionStore(__namedParameters: SessionStoreOptions)",
+        "parameters": [
+          {
+            "name": "__namedParameters",
+            "type": "SessionStoreOptions",
+            "optional": false,
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// lib/redis-session-store.ts\nimport { AbstractSessionStore } from '@auth0/nextjs-auth0/server';\nimport type { RequestCookies, ResponseCookies } from '@auth0/nextjs-auth0/server';\nimport { redis } from '@/lib/redis';\n\nexport class RedisSessionStore extends AbstractSessionStore {\n  async get(reqCookies) {\n    const sid = reqCookies.get(this.sessionCookieName)?.value;\n    if (!sid) return null;\n    const raw = await redis.get(sid);\n    return raw ? JSON.parse(raw) : null;\n  }\n\n  async set(reqCookies, resCookies, session) {\n    const sid = reqCookies.get(this.sessionCookieName)?.value ?? crypto.randomUUID();\n    await redis.setex(sid, this.calculateMaxAge(session.internal.createdAt), JSON.stringify(session));\n    resCookies.set(this.sessionCookieName, sid, this.cookieConfig);\n  }\n\n  async delete(reqCookies, resCookies) {\n    const sid = reqCookies.get(this.sessionCookieName)?.value;\n    if (sid) await redis.del(sid);\n    resCookies.delete(this.sessionCookieName);\n  }\n}\n\n// lib/auth0.ts\nexport const auth0 = new Auth0Client({ sessionStore: new RedisSessionStore({ secret: '...' }) });"
+        }
+      ]
+    },
+    "auth0client-options": {
+      "id": "auth0client-options",
+      "title": "Auth0ClientOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Configuration options for `Auth0Client`. All options can also be set via environment variables.",
+      "properties": [
+        {
+          "name": "allowInsecureRequests",
+          "type": "boolean",
+          "optional": true,
+          "description": "Allow insecure requests to be made to the authorization server. This can be useful when testing\nwith a mock OIDC provider that does not support TLS, locally.\nThis option can only be used when NODE_ENV is not set to `production`."
+        },
+        {
+          "name": "appBaseUrl",
+          "type": "string | string[]",
+          "optional": true,
+          "description": "The URL of your application (e.g.: `http://localhost:3000`).\n\nCan be a single URL string, or an array of allowed base URLs. When an array is\nprovided, the SDK validates the incoming request origin against the list and uses\nthe matching entry (allow-list mode). This is useful for multi-domain or preview\ndeployments where you want to restrict which origins are accepted.\n\nIf it's not specified, it will be loaded from the `APP_BASE_URL` environment variable.\nMultiple origins can be provided as a comma-separated string (e.g. `https://app.example.com,https://myapp.vercel.app`).\nIf neither is provided, the SDK will infer it from the request host at runtime."
+        },
+        {
+          "name": "authorizationParameters",
+          "type": "AuthorizationParameters",
+          "optional": true,
+          "description": "Additional parameters to send to the `/authorize` endpoint."
+        },
+        {
+          "name": "beforeSessionSaved",
+          "type": "BeforeSessionSavedHook",
+          "optional": true,
+          "description": "A method to manipulate the session before persisting it.\n\nSee [beforeSessionSaved](https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#beforesessionsaved) for additional details"
+        },
+        {
+          "name": "clientAssertionSigningAlg",
+          "type": "string",
+          "optional": true,
+          "description": "The algorithm used to sign the client assertion JWT.\nUses one of `token_endpoint_auth_signing_alg_values_supported` if not specified.\nIf the Authorization Server discovery document does not list `token_endpoint_auth_signing_alg_values_supported`\nthis property will be required."
+        },
+        {
+          "name": "clientAssertionSigningKey",
+          "type": "string | CryptoKey",
+          "optional": true,
+          "description": "Private key for use with `private_key_jwt` clients.\nThis should be a string that is the contents of a PEM file or a CryptoKey."
+        },
+        {
+          "name": "clientId",
+          "type": "string",
+          "optional": true,
+          "description": "The Auth0 client ID.\n\nIf it's not specified, it will be loaded from the `AUTH0_CLIENT_ID` environment variable."
+        },
+        {
+          "name": "clientSecret",
+          "type": "string",
+          "optional": true,
+          "description": "The Auth0 client secret.\n\nIf it's not specified, it will be loaded from the `AUTH0_CLIENT_SECRET` environment variable."
+        },
+        {
+          "name": "discoveryCache",
+          "type": "DiscoveryCacheOptions",
+          "optional": true,
+          "description": "Configuration for the OIDC discovery metadata cache.\nControls TTL and maximum cached issuers for MCD resolver mode.\nAlso applies in static mode (single cached entry).",
+          "see": [
+            "- DiscoveryCacheOptions\n - [MCD Examples](https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#multiple-custom-domains-mcd)"
+          ]
+        },
+        {
+          "name": "domain",
+          "type": "string | DomainResolver",
+          "optional": true,
+          "description": "The Auth0 domain for the tenant.\n\n- `string`: Static domain (e.g., `\"example.us.auth0.com\"`). Existing behavior preserved.\n- `DomainResolver`: Async function resolving domain per-request from headers.\n  Enables Multiple Custom Domains (MCD) for B2C multi-brand, B2B SaaS, or domain migration.\n\nFalls back to `AUTH0_DOMAIN` environment variable if not provided.",
+          "see": [
+            "- DomainResolver for resolver signature and examples.\n - [MCD Examples](https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#multiple-custom-domains-mcd)"
+          ]
+        },
+        {
+          "name": "dpopKeyPair",
+          "type": "DpopKeyPair",
+          "optional": true,
+          "description": "ES256 key pair for DPoP proof generation.\n\nIf not provided when `useDPoP` is true, the SDK will attempt to load keys from\nenvironment variables `AUTH0_DPOP_PUBLIC_KEY` and `AUTH0_DPOP_PRIVATE_KEY`.\nKeys must be in PEM format and use the P-256 elliptic curve.",
+          "see": [
+            "- DpopKeyPair for the key pair interface\n - generateDpopKeyPair for generating new key pairs"
+          ]
+        },
+        {
+          "name": "dpopOptions",
+          "type": "DpopOptions",
+          "optional": true,
+          "description": "Configuration options for DPoP timing validation and retry behavior.\n\nThese options control how the SDK validates DPoP proof timing and handles\nnonce errors. Proper configuration is important for both security and reliability.",
+          "see": [
+            "DpopOptions for detailed option descriptions"
+          ]
+        },
+        {
+          "name": "enableAccessTokenEndpoint",
+          "type": "boolean",
+          "optional": true,
+          "description": "Boolean value to enable the `/auth/access-token` endpoint for use in the client app.\n\nDefaults to `true`.\n\nNOTE: Set this to `false` if your client does not need to directly interact with resource servers (Token Mediating Backend). This will be false for most apps.\n\nA security best practice is to disable this to avoid exposing access tokens to the client app.\n\nSee: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-token-mediating-backend"
+        },
+        {
+          "name": "enableConnectAccountEndpoint",
+          "type": "boolean",
+          "optional": true,
+          "description": "If true, the `/auth/connect` endpoint will be mounted to enable users to connect additional accounts."
+        },
+        {
+          "name": "enableParallelTransactions",
+          "type": "boolean",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "enableTelemetry",
+          "type": "boolean",
+          "optional": true,
+          "description": "Boolean value to opt-out of sending the library name and version to your authorization server\nvia the `Auth0-Client` header. Defaults to `true`."
+        },
+        {
+          "name": "httpTimeout",
+          "type": "number",
+          "optional": true,
+          "description": "Integer value for the HTTP timeout in milliseconds for authentication requests.\nDefaults to `5000` ms."
+        },
+        {
+          "name": "includeIdTokenHintInOIDCLogoutUrl",
+          "type": "boolean",
+          "optional": true,
+          "description": "Configure whether to include id_token_hint in OIDC logout URLs.\n\n**Recommended (default)**: Set to `true` to include `id_token_hint` parameter.\nAuth0 recommends using `id_token_hint` for secure logout as per the\nOIDC specification.\n\n**Alternative approach**: Set to `false` if your application cannot securely\nstore ID tokens. When disabled, only `logout_hint` (session ID), `client_id`,\nand `post_logout_redirect_uri` are sent.",
+          "default": "```ts\ntrue (recommended and backwards compatible)\n```",
+          "see": [
+            "https://auth0.com/docs/authenticate/login/logout/log-users-out-of-auth0#oidc-logout-endpoint-parameters"
+          ]
+        },
+        {
+          "name": "logoutStrategy",
+          "type": "LogoutStrategy",
+          "optional": true,
+          "description": "Configure the logout strategy to use.\n\n- `'auto'` (default): Attempts OIDC RP-Initiated Logout first, falls back to `/v2/logout` if not supported\n- `'oidc'`: Always uses OIDC RP-Initiated Logout (requires RP-Initiated Logout to be enabled)\n- `'v2'`: Always uses the Auth0 `/v2/logout` endpoint (supports wildcards in allowed logout URLs)"
+        },
+        {
+          "name": "mfaTokenTtl",
+          "type": "number",
+          "optional": true,
+          "description": "MFA context TTL in seconds. Controls how long encrypted mfa_token remains valid.\nDefault: 300 (5 minutes, matching Auth0's mfa_token expiration)\n\nCan also be set via AUTH0_MFA_TOKEN_TTL environment variable."
+        },
+        {
+          "name": "noContentProfileResponseWhenUnauthenticated",
+          "type": "boolean",
+          "optional": true,
+          "description": "If true, the profile endpoint will return a 204 No Content response when the user is not authenticated\ninstead of returning a 401 Unauthorized response.\n\nDefaults to `false`."
+        },
+        {
+          "name": "onCallback",
+          "type": "OnCallbackHook",
+          "optional": true,
+          "description": "A method to handle errors or manage redirects after attempting to authenticate.\n\nSee [onCallback](https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#oncallback) for additional details"
+        },
+        {
+          "name": "pushedAuthorizationRequests",
+          "type": "boolean",
+          "optional": true,
+          "description": "If enabled, the SDK will use the Pushed Authorization Requests (PAR) protocol when communicating with the authorization server."
+        },
+        {
+          "name": "routes",
+          "type": "Partial<Pick<Routes, \"login\" | \"callback\" | \"logout\" | \"backChannelLogout\" | \"connectAccount\">>",
+          "optional": true,
+          "description": "Configure the paths for the authentication routes.\n\nSee [Custom routes](https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#custom-routes) for additional details."
+        },
+        {
+          "name": "secret",
+          "type": "string",
+          "optional": true,
+          "description": "A 32-byte, hex-encoded secret used for encrypting cookies.\n\nIf it's not specified, it will be loaded from the `AUTH0_SECRET` environment variable."
+        },
+        {
+          "name": "session",
+          "type": "SessionConfiguration",
+          "optional": true,
+          "description": "Configure the session timeouts and whether to use rolling sessions or not.\n\nSee [Session configuration](https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#session-configuration) for additional details."
+        },
+        {
+          "name": "sessionStore",
+          "type": "SessionDataStore",
+          "optional": true,
+          "description": "A custom session store implementation used to persist sessions to a data store.\n\nSee [Database sessions](https://github.com/auth0/nextjs-auth0/blob/main/EXAMPLES.md#database-sessions) for additional details."
+        },
+        {
+          "name": "signInReturnToPath",
+          "type": "string",
+          "optional": true,
+          "description": "The path to redirect the user to after successfully authenticating. Defaults to `/`."
+        },
+        {
+          "name": "tokenRefreshBuffer",
+          "type": "number",
+          "optional": true,
+          "description": "Number of seconds to refresh access tokens early when calling `getAccessToken`.\nThis is a server-side buffer applied to token expiration checks. For example,\nwith a buffer of 60 seconds, tokens expiring within the next minute will be\nrefreshed proactively when a refresh token is available.\n\nDefaults to `0` (no early refresh)."
+        },
+        {
+          "name": "transactionCookie",
+          "type": "TransactionCookieOptions",
+          "optional": true,
+          "description": "Configure the transaction cookie used to store the state of the authentication transaction."
+        },
+        {
+          "name": "useDPoP",
+          "type": "boolean",
+          "optional": true,
+          "description": "Enable DPoP (Demonstrating Proof-of-Possession) for enhanced OAuth 2.0 security.\n\nWhen enabled, the SDK will:\n- Generate DPoP proofs for token requests and protected resource requests\n- Bind access tokens cryptographically to the client's key pair\n- Prevent token theft and replay attacks\n- Handle DPoP nonce errors with automatic retry logic\n\nDPoP requires an ES256 key pair that can be provided via `dpopKeyPair` option\nor loaded from environment variables `AUTH0_DPOP_PUBLIC_KEY` and `AUTH0_DPOP_PRIVATE_KEY`.",
+          "default": "```ts\nfalse\n```",
+          "see": [
+            "RFC 9449: OAuth 2.0 Demonstrating Proof-of-Possession at the Application Layer (DPoP)"
+          ]
+        }
+      ]
+    },
+    "pages-router-request": {
+      "id": "pages-router-request",
+      "title": "PagesRouterRequest",
+      "kind": "type",
+      "section": "Server",
+      "description": "The incoming request type accepted by `getSession()`, `getAccessToken()`, and similar methods\nin the Pages Router. Pass `req` from `getServerSideProps` or an API route handler."
+    },
+    "pages-router-response": {
+      "id": "pages-router-response",
+      "title": "PagesRouterResponse",
+      "kind": "type",
+      "section": "Server",
+      "description": "The response type accepted by `getSession()`, `getAccessToken()`, and `updateSession()` methods\nin the Pages Router. Pass `res` from `getServerSideProps` or an API route handler."
+    },
+    "before-session-saved-hook": {
+      "id": "before-session-saved-hook",
+      "title": "BeforeSessionSavedHook",
+      "kind": "type",
+      "section": "Server",
+      "description": "Hook called before the session is saved after a successful login. Use this to modify\nthe session data, strip unwanted claims, or add custom fields.",
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "export const auth0 = new Auth0Client({\n  async beforeSessionSaved(session, idToken) {\n    return {\n      ...session,\n      user: { ...session.user, role: session.user['https://myapp.com/role'] },\n    };\n  },\n});"
+        }
+      ]
+    },
+    "on-callback-hook": {
+      "id": "on-callback-hook",
+      "title": "OnCallbackHook",
+      "kind": "type",
+      "section": "Server",
+      "description": "Hook called after the authorization callback completes. Use this to handle errors,\ncustomize the redirect, or perform post-login logic.",
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "export const auth0 = new Auth0Client({\n  async onCallback(error, ctx, session) {\n    if (error) {\n      return NextResponse.redirect(new URL('/error', ctx.appBaseUrl));\n    }\n    return NextResponse.redirect(new URL(ctx.returnTo ?? '/', ctx.appBaseUrl));\n  },\n});"
+        }
+      ]
+    },
+    "on-callback-context": {
+      "id": "on-callback-context",
+      "title": "OnCallbackContext",
+      "kind": "type",
+      "section": "Server",
+      "description": "Context object passed to the `onCallback` hook.",
+      "properties": [
+        {
+          "name": "appBaseUrl",
+          "type": "string",
+          "optional": true,
+          "description": "The resolved base URL for the current request, used to build safe redirects."
+        },
+        {
+          "name": "connectedAccount",
+          "type": "CompleteConnectAccountResponse",
+          "optional": true,
+          "description": "The connected account information when the responseType is RESPONSE_TYPES.CONNECT_CODE"
+        },
+        {
+          "name": "responseType",
+          "type": "RESPONSE_TYPES",
+          "optional": true,
+          "description": "The type of response expected from the authorization server.\nOne of RESPONSE_TYPES"
+        },
+        {
+          "name": "returnTo",
+          "type": "string",
+          "optional": true,
+          "description": "The URL or path the user should be redirected to after completing the transaction."
+        }
+      ]
+    },
+    "routes-options": {
+      "id": "routes-options",
+      "title": "RoutesOptions",
+      "kind": "type",
+      "section": "Server",
+      "description": "Subset of route paths that can be customized via `Auth0Client` options.\nPass this to the `routes` option to override the default paths."
+    },
+    "routes": {
+      "id": "routes",
+      "title": "Routes",
+      "kind": "interface",
+      "section": "Server",
+      "description": "The full set of route paths used by the SDK's built-in handler.",
+      "properties": [
+        {
+          "name": "accessToken",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "backChannelLogout",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "callback",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "connectAccount",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "login",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "logout",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "mfaAuthenticators",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "mfaChallenge",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "mfaEnroll",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "mfaVerify",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "profile",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        }
+      ]
+    },
+    "session-cookie-options": {
+      "id": "session-cookie-options",
+      "title": "SessionCookieOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Cookie configuration for the session cookie. Pass to `Auth0Client` via the `session.cookie` option.",
+      "properties": [
+        {
+          "name": "domain",
+          "type": "string",
+          "optional": true,
+          "description": "Specifies the value for the Set-Cookie attribute. By default, no\ndomain is set, and most clients will consider the cookie to apply to only\nthe current domain."
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": true,
+          "description": "The name of the session cookie.\n\nDefault: `__session`."
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "optional": true,
+          "description": "The path attribute of the session cookie. Will be set to '/' by default."
+        },
+        {
+          "name": "sameSite",
+          "type": "\"lax\" | \"strict\" | \"none\"",
+          "optional": true,
+          "description": "The sameSite attribute of the session cookie.\n\nDefault: `lax`."
+        },
+        {
+          "name": "secure",
+          "type": "boolean",
+          "optional": true,
+          "description": "The secure attribute of the session cookie.\n\nDefault: depends on the protocol of the application's base URL. If the protocol is `https`, then `true`, otherwise `false`."
+        },
+        {
+          "name": "transient",
+          "type": "boolean",
+          "optional": true,
+          "description": "The transient attribute of the session cookie. When true, the cookie will not persist beyond the current session."
+        }
+      ]
+    },
+    "session-configuration": {
+      "id": "session-configuration",
+      "title": "SessionConfiguration",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Session lifetime configuration. Pass to `Auth0Client` via the `session` option.",
+      "properties": [
+        {
+          "name": "absoluteDuration",
+          "type": "number",
+          "optional": true,
+          "description": "The absolute duration after which the session will expire. The value must be specified in seconds.\n\nOnce the absolute duration has been reached, the session will no longer be extended.\n\nDefault: 3 days."
+        },
+        {
+          "name": "cookie",
+          "type": "SessionCookieOptions",
+          "optional": true,
+          "description": "The options for the session cookie."
+        },
+        {
+          "name": "inactivityDuration",
+          "type": "number",
+          "optional": true,
+          "description": "The duration of inactivity after which the session will expire. The value must be specified in seconds.\n\nThe session will be extended as long as it was active before the inactivity duration has been reached.\n\nDefault: 1 day."
+        },
+        {
+          "name": "rolling",
+          "type": "boolean",
+          "optional": true,
+          "description": "A boolean indicating whether rolling sessions should be used or not.\n\nWhen enabled, the session will continue to be extended as long as it is used within the inactivity duration.\nOnce the upper bound, set via the `absoluteDuration`, has been reached, the session will no longer be extended.\n\nDefault: `true`."
+        }
+      ]
+    },
+    "session-store-options": {
+      "id": "session-store-options",
+      "title": "SessionStoreOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options passed to `AbstractSessionStore` subclass constructor.\nExtends `SessionConfiguration` with the required `secret` and optional custom `store`.",
+      "properties": [
+        {
+          "name": "absoluteDuration",
+          "type": "number",
+          "optional": true,
+          "description": "The absolute duration after which the session will expire. The value must be specified in seconds.\n\nOnce the absolute duration has been reached, the session will no longer be extended.\n\nDefault: 3 days."
+        },
+        {
+          "name": "cookie",
+          "type": "SessionCookieOptions",
+          "optional": true,
+          "description": "The options for the session cookie."
+        },
+        {
+          "name": "cookieOptions",
+          "type": "SessionCookieOptions",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "inactivityDuration",
+          "type": "number",
+          "optional": true,
+          "description": "The duration of inactivity after which the session will expire. The value must be specified in seconds.\n\nThe session will be extended as long as it was active before the inactivity duration has been reached.\n\nDefault: 1 day."
+        },
+        {
+          "name": "rolling",
+          "type": "boolean",
+          "optional": true,
+          "description": "A boolean indicating whether rolling sessions should be used or not.\n\nWhen enabled, the session will continue to be extended as long as it is used within the inactivity duration.\nOnce the upper bound, set via the `absoluteDuration`, has been reached, the session will no longer be extended.\n\nDefault: `true`."
+        },
+        {
+          "name": "secret",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "store",
+          "type": "SessionDataStore",
+          "optional": true,
+          "description": ""
+        }
+      ]
+    },
+    "session-data": {
+      "id": "session-data",
+      "title": "SessionData",
+      "kind": "interface",
+      "section": "Server",
+      "description": "The full session object stored by the SDK. Available in `beforeSessionSaved` and\n`onCallback` hooks, and returned by `getSession()`.",
+      "properties": [
+        {
+          "name": "accessTokens",
+          "type": "AccessTokenSet[]",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "connectionTokenSets",
+          "type": "ConnectionTokenSet[]",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "internal",
+          "type": "{ ... }",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "tokenSet",
+          "type": "TokenSet",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "optional": false,
+          "description": ""
+        }
+      ]
+    },
+    "session-data-store": {
+      "id": "session-data-store",
+      "title": "SessionDataStore",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Interface for a custom session data store. Implement this and pass it to\n`AbstractSessionStore` to use a custom backend (Redis, database, etc.) for sessions.\n\n**TTL contract:** every successful write method (`set`, `update`) must reset the session\nTTL/expiry so that active sessions are not silently expired between requests."
+    },
+    "user": {
+      "id": "user",
+      "title": "User",
+      "kind": "interface",
+      "section": "Server",
+      "description": "The authenticated user object available on `session.user`.\nStandard OIDC claims plus any custom claims added via Auth0 Actions.",
+      "properties": [
+        {
+          "name": "email",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "email_verified",
+          "type": "boolean",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "family_name",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "given_name",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "nickname",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "org_id",
+          "type": "string",
+          "optional": true,
+          "description": "The organization ID that the user belongs to.\nThis field is populated when the user logs in through an organization."
+        },
+        {
+          "name": "picture",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        }
+      ]
+    },
+    "logout-token": {
+      "id": "logout-token",
+      "title": "LogoutToken",
+      "kind": "type",
+      "section": "Server",
+      "description": "The logout token shape passed to `SessionDataStore.deleteByLogoutToken()`.",
+      "properties": [
+        {
+          "name": "iss",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "sid",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        }
+      ]
+    },
+    "logout-strategy": {
+      "id": "logout-strategy",
+      "title": "LogoutStrategy",
+      "kind": "type",
+      "section": "Server",
+      "description": "Controls which logout endpoint the SDK uses.\n\n- `\"auto\"` (default): uses OIDC RP-Initiated Logout if the discovery document advertises it, otherwise falls back to the Auth0 `/v2/logout` endpoint.\n- `\"oidc\"`: always use OIDC RP-Initiated Logout.\n- `\"v2\"`: always use the Auth0 `/v2/logout` endpoint."
+    },
+    "start-interactive-login-options": {
+      "id": "start-interactive-login-options",
+      "title": "StartInteractiveLoginOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options for `startInteractiveLogin()`.",
+      "properties": [
+        {
+          "name": "authorizationParameters",
+          "type": "AuthorizationParameters",
+          "optional": true,
+          "description": "Authorization parameters to be passed to the authorization server."
+        },
+        {
+          "name": "returnTo",
+          "type": "string",
+          "optional": true,
+          "description": "The URL to redirect to after a successful login."
+        }
+      ]
+    },
+    "authorization-parameters": {
+      "id": "authorization-parameters",
+      "title": "AuthorizationParameters",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Authorization parameters passed to the Auth0 `/authorize` endpoint.\nUse these to control the login experience: scopes, audience, organization, and more.",
+      "properties": [
+        {
+          "name": "audience",
+          "type": "string | null",
+          "optional": true,
+          "description": "The unique identifier of the target API you want to access."
+        },
+        {
+          "name": "max_age",
+          "type": "number",
+          "optional": true,
+          "description": "The maximum amount of time, in seconds, after which a user must reauthenticate."
+        },
+        {
+          "name": "organization",
+          "type": "string",
+          "optional": true,
+          "description": "The unique identifier of the organization that the user should be logged into.\nWhen specified, the user will be prompted to log in to this specific organization.\nThe organization ID will be included in the user's session after successful authentication."
+        },
+        {
+          "name": "redirect_uri",
+          "type": "string | null",
+          "optional": true,
+          "description": "The URL to which the authorization server will redirect the user after granting authorization."
+        },
+        {
+          "name": "scope",
+          "type": "string | { ... } | null",
+          "optional": true,
+          "description": "The scope of the access request, expressed as a list of space-delimited, case-sensitive strings.\nDefaults to `\"openid profile email offline_access\"`."
+        }
+      ]
+    },
+    "get-access-token-options": {
+      "id": "get-access-token-options",
+      "title": "GetAccessTokenOptions",
+      "kind": "type",
+      "section": "Server",
+      "description": "Options for `getAccessToken()`.",
+      "properties": [
+        {
+          "name": "audience",
+          "type": "string | null",
+          "optional": true,
+          "description": "Please note: If you are passing audience, ensure that the used audiences and scopes are\npart of the Application's Refresh Token Policies in Auth0 when configuring Multi-Resource Refresh Tokens (MRRT).\nAuth0 Documentation on Multi-resource Refresh Tokens"
+        },
+        {
+          "name": "refresh",
+          "type": "boolean | null",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "scope",
+          "type": "string | null",
+          "optional": true,
+          "description": ""
+        }
+      ]
+    },
+    "access-token-for-connection-options": {
+      "id": "access-token-for-connection-options",
+      "title": "AccessTokenForConnectionOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options for `getAccessTokenForConnection()`.",
+      "properties": [
+        {
+          "name": "connection",
+          "type": "string",
+          "optional": false,
+          "description": "The connection name for which you want to retrieve the access token."
+        },
+        {
+          "name": "login_hint",
+          "type": "string",
+          "optional": true,
+          "description": "An optional login hint to pass to the authorization server."
+        },
+        {
+          "name": "subject_token_type",
+          "type": "SUBJECT_TOKEN_TYPES",
+          "optional": true,
+          "description": "The type of token that is being exchanged.\n\nUses the SUBJECT_TOKEN_TYPES enum with the following allowed values:\n- `SUBJECT_TYPE_REFRESH_TOKEN`: `\"urn:ietf:params:oauth:token-type:refresh_token\"`\n- `SUBJECT_TYPE_ACCESS_TOKEN`: `\"urn:ietf:params:oauth:token-type:access_token\"`\n\nDefaults to `SUBJECT_TYPE_REFRESH_TOKEN`."
+        }
+      ]
+    },
+    "connection-token-set": {
+      "id": "connection-token-set",
+      "title": "ConnectionTokenSet",
+      "kind": "interface",
+      "section": "Server",
+      "description": "A connection access token set returned by `getAccessTokenForConnection()`.",
+      "properties": [
+        {
+          "name": "accessToken",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "connection",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "expiresAt",
+          "type": "number",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "scope",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        }
+      ]
+    },
+    "custom-token-exchange-options": {
+      "id": "custom-token-exchange-options",
+      "title": "CustomTokenExchangeOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options for `customTokenExchange()`.",
+      "properties": [
+        {
+          "name": "actorToken",
+          "type": "string",
+          "optional": true,
+          "description": "Actor token for delegation/impersonation scenarios (RFC 8693).\nIf provided, `actorTokenType` is required."
+        },
+        {
+          "name": "actorTokenType",
+          "type": "string",
+          "optional": true,
+          "description": "Actor token type URI (required if actorToken is provided)."
+        },
+        {
+          "name": "additionalParameters",
+          "type": "Record<string, unknown>",
+          "optional": true,
+          "description": "Additional custom parameters passed to the token endpoint.\nAccessible in Auth0 Action via `event.request.body`."
+        },
+        {
+          "name": "audience",
+          "type": "string",
+          "optional": true,
+          "description": "The unique identifier of the target API."
+        },
+        {
+          "name": "organization",
+          "type": "string",
+          "optional": true,
+          "description": "Organization ID or name for multi-tenant scenarios."
+        },
+        {
+          "name": "scope",
+          "type": "string",
+          "optional": true,
+          "description": "Space-delimited OAuth 2.0 scopes.\n\n**Note**: These scopes are merged with SDK default scopes\n(openid profile email offline_access). Duplicates are removed."
+        },
+        {
+          "name": "subjectToken",
+          "type": "string",
+          "optional": false,
+          "description": "The external token being exchanged.\nThis will be validated by your Auth0 Action with the Custom Token Exchange trigger.\n\n**Validation**: Must be a non-empty string."
+        },
+        {
+          "name": "subjectTokenType",
+          "type": "string",
+          "optional": false,
+          "description": "Custom URI identifying the token type.\n\n**Validation Rules**:\n- Must be 10-100 characters\n- Must be a valid URI (URL or URN format)"
+        }
+      ]
+    },
+    "custom-token-exchange-response": {
+      "id": "custom-token-exchange-response",
+      "title": "CustomTokenExchangeResponse",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Response from `customTokenExchange()`.",
+      "properties": [
+        {
+          "name": "accessToken",
+          "type": "string",
+          "optional": false,
+          "description": "The access token issued by Auth0"
+        },
+        {
+          "name": "expiresIn",
+          "type": "number",
+          "optional": false,
+          "description": "Token lifetime in seconds"
+        },
+        {
+          "name": "idToken",
+          "type": "string",
+          "optional": true,
+          "description": "The ID token, if openid scope was requested"
+        },
+        {
+          "name": "refreshToken",
+          "type": "string",
+          "optional": true,
+          "description": "The refresh token, if offline_access scope was requested"
+        },
+        {
+          "name": "scope",
+          "type": "string",
+          "optional": true,
+          "description": "Granted scopes"
+        },
+        {
+          "name": "tokenType",
+          "type": "string",
+          "optional": false,
+          "description": "Token type, typically \"Bearer\" or \"DPoP\""
+        }
+      ]
+    },
+    "backchannel-authentication-options": {
+      "id": "backchannel-authentication-options",
+      "title": "BackchannelAuthenticationOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options for initiating a Client-Initiated Backchannel Authentication (CIBA) flow\nvia `getTokenByBackchannelAuth()`.",
+      "properties": [
+        {
+          "name": "authorizationDetails",
+          "type": "AuthorizationDetails[]",
+          "optional": true,
+          "description": "Optional authorization details for Rich Authorization Requests (RAR).",
+          "see": [
+            "https://auth0.com/docs/get-started/apis/configure-rich-authorization-requests"
+          ]
+        },
+        {
+          "name": "authorizationParams",
+          "type": "AuthorizationParameters",
+          "optional": true,
+          "description": "Authorization parameters to be sent with the authorization request."
+        },
+        {
+          "name": "bindingMessage",
+          "type": "string",
+          "optional": false,
+          "description": "Human-readable message displayed at both the consumption device and the authentication device."
+        },
+        {
+          "name": "loginHint",
+          "type": "{ ... }",
+          "optional": false,
+          "description": "The login hint identifying which user to authenticate."
+        },
+        {
+          "name": "requestedExpiry",
+          "type": "number",
+          "optional": true,
+          "description": "Custom expiry time for the CIBA flow in seconds. Defaults to 300 seconds (5 minutes)."
+        }
+      ]
+    },
+    "backchannel-authentication-response": {
+      "id": "backchannel-authentication-response",
+      "title": "BackchannelAuthenticationResponse",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Response from a successful Client-Initiated Backchannel Authentication (CIBA) flow.",
+      "properties": [
+        {
+          "name": "authorizationDetails",
+          "type": "AuthorizationDetails[]",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "idTokenClaims",
+          "type": "{ ... }",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "tokenSet",
+          "type": "TokenSet",
+          "optional": false,
+          "description": ""
+        }
+      ]
+    },
+    "authorization-details": {
+      "id": "authorization-details",
+      "title": "AuthorizationDetails",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Rich Authorization Request detail object.",
+      "properties": [
+        {
+          "name": "type",
+          "type": "string",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "see": [
+        "https://auth0.com/docs/get-started/apis/configure-rich-authorization-requests"
+      ]
+    },
+    "connect-account-options": {
+      "id": "connect-account-options",
+      "title": "ConnectAccountOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options for `connectAccount()`.",
+      "properties": [
+        {
+          "name": "authorizationParams",
+          "type": "AuthorizationParameters",
+          "optional": true,
+          "description": "Authorization parameters to be passed to the authorization server."
+        },
+        {
+          "name": "connection",
+          "type": "string",
+          "optional": false,
+          "description": "The name of the connection to link the account with (e.g., 'google-oauth2', 'facebook')."
+        },
+        {
+          "name": "returnTo",
+          "type": "string",
+          "optional": true,
+          "description": "The URL to redirect to after successfully connecting the account."
+        },
+        {
+          "name": "scopes",
+          "type": "string[]",
+          "optional": true,
+          "description": "Array of scopes to request from the Identity Provider during the connect account flow."
+        }
+      ]
+    },
+    "mfa-client": {
+      "id": "mfa-client",
+      "title": "MfaClient",
+      "kind": "interface",
+      "section": "Server",
+      "description": "The `auth0.mfa` client interface. Access via `auth0.mfa` on an `Auth0Client` instance.\nUse this to drive MFA challenge-response and enrollment flows after receiving a `MfaRequiredError`."
+    },
+    "authenticator": {
+      "id": "authenticator",
+      "title": "Authenticator",
+      "kind": "interface",
+      "section": "Server",
+      "description": "An enrolled MFA authenticator returned by `auth0.mfa.getAuthenticators()`.",
+      "properties": [
+        {
+          "name": "active",
+          "type": "boolean",
+          "optional": false,
+          "description": "Whether this authenticator is active"
+        },
+        {
+          "name": "authenticatorType",
+          "type": "string",
+          "optional": false,
+          "description": "Authenticator type (e.g., 'otp', 'oob')"
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false,
+          "description": "Authenticator ID"
+        },
+        {
+          "name": "lastAuthenticatedAt",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "oobChannel",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "phoneNumber",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "optional": true,
+          "description": ""
+        }
+      ]
+    },
+    "challenge-response": {
+      "id": "challenge-response",
+      "title": "ChallengeResponse",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Response from `auth0.mfa.challenge()`.",
+      "properties": [
+        {
+          "name": "bindingMethod",
+          "type": "string",
+          "optional": true,
+          "description": "Binding method (for oob challenges, e.g., 'prompt')"
+        },
+        {
+          "name": "challengeType",
+          "type": "string",
+          "optional": false,
+          "description": "Challenge type (otp, oob)"
+        },
+        {
+          "name": "oobCode",
+          "type": "string",
+          "optional": true,
+          "description": "OOB code (for oob challenges)"
+        }
+      ]
+    },
+    "enroll-options": {
+      "id": "enroll-options",
+      "title": "EnrollOptions",
+      "kind": "type",
+      "section": "Server",
+      "description": "MFA enrollment options passed to `auth0.mfa.enroll()`. Discriminated union of\n`EnrollOtpOptions` and `EnrollOobOptions`."
+    },
+    "enroll-otp-options": {
+      "id": "enroll-otp-options",
+      "title": "EnrollOtpOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options for enrolling an OTP (TOTP) authenticator via `auth0.mfa.enroll()`.",
+      "properties": [
+        {
+          "name": "authenticatorTypes",
+          "type": "[\"otp\"]",
+          "optional": false,
+          "description": "Authenticator types to enroll"
+        },
+        {
+          "name": "mfaToken",
+          "type": "string",
+          "optional": false,
+          "description": "Encrypted MFA token"
+        }
+      ]
+    },
+    "enroll-oob-options": {
+      "id": "enroll-oob-options",
+      "title": "EnrollOobOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Options for enrolling an OOB (SMS/Voice/Push/Email) authenticator via `auth0.mfa.enroll()`.",
+      "properties": [
+        {
+          "name": "authenticatorTypes",
+          "type": "[\"oob\"]",
+          "optional": false,
+          "description": "Authenticator types to enroll"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "optional": true,
+          "description": "Email address (optional for email channel)"
+        },
+        {
+          "name": "mfaToken",
+          "type": "string",
+          "optional": false,
+          "description": "Encrypted MFA token"
+        },
+        {
+          "name": "oobChannels",
+          "type": "\"email\" | \"sms\" | \"voice\" | \"auth0\"[]",
+          "optional": false,
+          "description": "OOB channels (sms, voice, auth0, email)"
+        },
+        {
+          "name": "phoneNumber",
+          "type": "string",
+          "optional": true,
+          "description": "Phone number in E.164 format (required for sms/voice)"
+        }
+      ]
+    },
+    "enrollment-response": {
+      "id": "enrollment-response",
+      "title": "EnrollmentResponse",
+      "kind": "type",
+      "section": "Server",
+      "description": "Response from `auth0.mfa.enroll()`. Discriminated union by `authenticatorType`.\nContains enrollment details including TOTP secret/barcode URI (OTP) or OOB code (SMS/Push)."
+    },
+    "verify-mfa-options": {
+      "id": "verify-mfa-options",
+      "title": "VerifyMfaOptions",
+      "kind": "type",
+      "section": "Server",
+      "description": "Options for `auth0.mfa.verify()`. Discriminated union: pass `otp`, `oobCode + bindingCode`,\nor `recoveryCode` depending on the challenge type."
+    },
+    "verify-mfa-options-base": {
+      "id": "verify-mfa-options-base",
+      "title": "VerifyMfaOptionsBase",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Base options for `auth0.mfa.verify()`. Extended by each verification method.",
+      "properties": [
+        {
+          "name": "mfaToken",
+          "type": "string",
+          "optional": false,
+          "description": "Encrypted MFA token"
+        }
+      ]
+    },
+    "verify-mfa-with-otp-options": {
+      "id": "verify-mfa-with-otp-options",
+      "title": "VerifyMfaWithOtpOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Verification with OTP code from an authenticator app (TOTP).",
+      "properties": [
+        {
+          "name": "mfaToken",
+          "type": "string",
+          "optional": false,
+          "description": "Encrypted MFA token"
+        },
+        {
+          "name": "otp",
+          "type": "string",
+          "optional": false,
+          "description": "6-digit OTP code from authenticator app"
+        }
+      ]
+    },
+    "verify-mfa-with-oob-options": {
+      "id": "verify-mfa-with-oob-options",
+      "title": "VerifyMfaWithOobOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Verification with OOB code sent via SMS/Email/Push.",
+      "properties": [
+        {
+          "name": "bindingCode",
+          "type": "string",
+          "optional": false,
+          "description": "Binding code received via SMS/Push"
+        },
+        {
+          "name": "mfaToken",
+          "type": "string",
+          "optional": false,
+          "description": "Encrypted MFA token"
+        },
+        {
+          "name": "oobCode",
+          "type": "string",
+          "optional": false,
+          "description": "OOB code from `challenge()` response"
+        }
+      ]
+    },
+    "verify-mfa-with-recovery-code-options": {
+      "id": "verify-mfa-with-recovery-code-options",
+      "title": "VerifyMfaWithRecoveryCodeOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Verification with a recovery code.",
+      "properties": [
+        {
+          "name": "mfaToken",
+          "type": "string",
+          "optional": false,
+          "description": "Encrypted MFA token"
+        },
+        {
+          "name": "recoveryCode",
+          "type": "string",
+          "optional": false,
+          "description": "Recovery code from enrollment"
+        }
+      ]
+    },
+    "mfa-verify-response": {
+      "id": "mfa-verify-response",
+      "title": "MfaVerifyResponse",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Raw token response from `auth0.mfa.verify()`. Uses snake_case to match Auth0 API conventions.",
+      "properties": [
+        {
+          "name": "access_token",
+          "type": "string",
+          "optional": false,
+          "description": "Access token"
+        },
+        {
+          "name": "audience",
+          "type": "string",
+          "optional": true,
+          "description": "API audience"
+        },
+        {
+          "name": "expires_in",
+          "type": "number",
+          "optional": false,
+          "description": "Expires in seconds"
+        },
+        {
+          "name": "id_token",
+          "type": "string",
+          "optional": true,
+          "description": "ID token (if present)"
+        },
+        {
+          "name": "recovery_code",
+          "type": "string",
+          "optional": true,
+          "description": "Recovery code (if regenerated by tenant config)"
+        },
+        {
+          "name": "refresh_token",
+          "type": "string",
+          "optional": true,
+          "description": "Refresh token (if present)"
+        },
+        {
+          "name": "scope",
+          "type": "string",
+          "optional": true,
+          "description": "Token scope"
+        },
+        {
+          "name": "token_type",
+          "type": "string",
+          "optional": false,
+          "description": "Token type (usually \"Bearer\")"
+        }
+      ]
+    },
+    "domain-resolver": {
+      "id": "domain-resolver",
+      "title": "DomainResolver",
+      "kind": "type",
+      "section": "Server",
+      "description": ""
+    },
+    "discovery-cache-options": {
+      "id": "discovery-cache-options",
+      "title": "DiscoveryCacheOptions",
+      "kind": "type",
+      "section": "Server",
+      "description": ""
+    },
+    "dpop-key-pair": {
+      "id": "dpop-key-pair",
+      "title": "DpopKeyPair",
+      "kind": "interface",
+      "section": "Server",
+      "description": "ES256 key pair for DPoP (Demonstrating Proof-of-Possession).\nGenerate with `generateDpopKeyPair()` and pass to `Auth0Client` via `dpopKeyPair`.",
+      "properties": [
+        {
+          "name": "privateKey",
+          "type": "CryptoKey",
+          "optional": false,
+          "description": "ES256 private key used to sign DPoP proofs"
+        },
+        {
+          "name": "publicKey",
+          "type": "CryptoKey",
+          "optional": false,
+          "description": "ES256 public key included in DPoP proofs for verification"
+        }
+      ]
+    },
+    "dpop-options": {
+      "id": "dpop-options",
+      "title": "DpopOptions",
+      "kind": "interface",
+      "section": "Server",
+      "description": "DPoP timing validation options. Pass to `Auth0Client` via `dpopOptions`.",
+      "properties": [
+        {
+          "name": "clockSkew",
+          "type": "number",
+          "optional": true,
+          "description": "Clock skew adjustment in seconds. Positive values shift the assumed current time forward;\nnegative values shift it backward. Default: `0`."
+        },
+        {
+          "name": "clockTolerance",
+          "type": "number",
+          "optional": true,
+          "description": "Clock tolerance in seconds for DPoP proof DateTime claims validation.\nHigher values are more permissive but may weaken replay protection. Default: `30`."
+        },
+        {
+          "name": "retry",
+          "type": "RetryConfig",
+          "optional": true,
+          "description": "Configuration for DPoP nonce error retry behavior."
+        }
+      ],
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "export const auth0 = new Auth0Client({\n  useDPoP: true,\n  dpopOptions: {\n    clockTolerance: 60,\n    retry: { delay: 200, jitter: true },\n  },\n});"
+        }
+      ]
+    },
+    "retry-config": {
+      "id": "retry-config",
+      "title": "RetryConfig",
+      "kind": "interface",
+      "section": "Server",
+      "description": "Retry configuration for DPoP nonce errors. Pass to `DpopOptions.retry`.",
+      "properties": [
+        {
+          "name": "delay",
+          "type": "number",
+          "optional": true,
+          "description": "Delay in milliseconds before retrying on DPoP nonce error. Default: `100`."
+        },
+        {
+          "name": "jitter",
+          "type": "boolean",
+          "optional": true,
+          "description": "Whether to add jitter (randomness) to the retry delay to prevent thundering herd.\nWhen enabled, actual delay is 50-100% of `delay`. Default: `true`."
+        }
+      ]
+    },
+    "subject-token-types": {
+      "id": "subject-token-types",
+      "title": "SUBJECT_TOKEN_TYPES",
+      "kind": "enum",
+      "section": "Server",
+      "description": "Subject token type URIs for Custom Token Exchange (RFC 8693).",
+      "members": [
+        {
+          "name": "SUBJECT_TYPE_ACCESS_TOKEN",
+          "value": "urn:ietf:params:oauth:token-type:access_token",
+          "description": "Indicates that the token is an OAuth 2.0 access token issued by the given authorization server."
+        },
+        {
+          "name": "SUBJECT_TYPE_REFRESH_TOKEN",
+          "value": "urn:ietf:params:oauth:token-type:refresh_token",
+          "description": "Indicates that the token is an OAuth 2.0 refresh token issued by the given authorization server."
+        }
+      ]
+    },
+    "grant-type-custom-token-exchange": {
+      "id": "grant-type-custom-token-exchange",
+      "title": "GRANT_TYPE_CUSTOM_TOKEN_EXCHANGE",
+      "kind": "constant",
+      "section": "Server",
+      "description": "Grant type for Custom Token Exchange as per RFC 8693.",
+      "type": "\"urn:ietf:params:oauth:grant-type:token-exchange\""
+    },
+    "default-id-token-claims": {
+      "id": "default-id-token-claims",
+      "title": "DEFAULT_ID_TOKEN_CLAIMS",
+      "kind": "constant",
+      "section": "Server",
+      "description": "The default set of OIDC claims stored in the session user object.",
+      "type": "string[]"
+    },
+    "filter-default-id-token-claims": {
+      "id": "filter-default-id-token-claims",
+      "title": "filterDefaultIdTokenClaims",
+      "kind": "function",
+      "section": "Server",
+      "description": "Filters a claims object to keep only the standard OIDC claims listed in `DEFAULT_ID_TOKEN_CLAIMS`.\nAll other claims are stripped.\n\nUseful inside a `beforeSessionSaved` hook when the ID token includes custom claims you do not\nwant to store in the session.",
+      "signature": "filterDefaultIdTokenClaims(claims: { ... }): User",
+      "parameters": [
+        {
+          "name": "claims",
+          "type": "{ ... }",
+          "optional": false,
+          "description": "The raw claims object, typically `session.user` from the `beforeSessionSaved` callback."
+        }
+      ],
+      "returns": {
+        "type": "User",
+        "description": "A `User` object containing only the default claims."
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// lib/auth0.ts\nimport { Auth0Client, filterDefaultIdTokenClaims } from '@auth0/nextjs-auth0/server';\n\nexport const auth0 = new Auth0Client({\n  async beforeSessionSaved(session) {\n    return {\n      ...session,\n      user: {\n        ...filterDefaultIdTokenClaims(session.user),\n        // add back only the custom claims you want to keep\n        role: session.user.role,\n      },\n    };\n  },\n});"
+        }
+      ]
+    },
+    "generate-dpop-key-pair": {
+      "id": "generate-dpop-key-pair",
+      "title": "generateDpopKeyPair",
+      "kind": "function",
+      "section": "Server",
+      "description": "Generates an ES256 key pair for DPoP (Demonstrating Proof-of-Possession).\nPass the result to `Auth0Client` via the `dpopKeyPair` option to bind access tokens\ncryptographically to the client, preventing token theft and replay attacks.\n\nCall this once when your application starts and reuse the same key pair for the lifetime\nof the `Auth0Client` instance.",
+      "signature": "generateDpopKeyPair(): Promise<DpopKeyPair>",
+      "parameters": [],
+      "returns": {
+        "type": "Promise<DpopKeyPair>",
+        "description": "A `DpopKeyPair` containing ES256 `publicKey` and `privateKey` as `CryptoKey` objects."
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "// lib/auth0.ts\nimport { Auth0Client, generateDpopKeyPair } from '@auth0/nextjs-auth0/server';\n\nconst dpopKeyPair = await generateDpopKeyPair();\n\nexport const auth0 = new Auth0Client({\n  useDPoP: true,\n  dpopKeyPair,\n});"
+        }
+      ]
+    },
+    "auth0provider": {
+      "id": "auth0provider",
+      "title": "Auth0Provider",
+      "kind": "function",
+      "section": "Client",
+      "description": "Bridges your server-side session to client components. Wrap your root layout with this\nprovider and pass the session user; useUser will return that user immediately\non first render with no loading state and no network request.\n\nWithout this provider, useUser still works but always starts as `isLoading: true`\nwhile it fetches `/auth/profile`, causing a flash of unauthenticated state on every page load.\nSWR revalidates the session in the background (on tab focus, reconnect) regardless.\n\n**Prerequisite:** Call `auth0.getSession()` in your server layout and pass `session?.user` here.",
+      "signature": "Auth0Provider(__namedParameters: { ... }): Element",
+      "parameters": [
+        {
+          "name": "__namedParameters",
+          "type": "{ ... }",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Element",
+        "description": ""
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "tsx",
+          "code": "// app/layout.tsx\nimport { Auth0Provider } from '@auth0/nextjs-auth0/client';\nimport { auth0 } from '@/lib/auth0';\n\nexport default async function RootLayout({ children }: { children: React.ReactNode }) {\n  const session = await auth0.getSession();\n  // session?.user:\n  // {\n  //   \"sub\": \"auth0|64b2e5f8a3c1d90012ef4567\",\n  //   \"name\": \"Jane Doe\",\n  //   \"email\": \"jane@example.com\",\n  //   \"picture\": \"https://cdn.auth0.com/avatars/jd.png\",\n  //   \"email_verified\": true\n  // }\n\n  return (\n    <html>\n      <body>\n        <Auth0Provider user={session?.user}>\n          {children}\n        </Auth0Provider>\n      </body>\n    </html>\n  );\n}"
+        }
+      ]
+    },
+    "use-user": {
+      "id": "use-user",
+      "title": "useUser",
+      "kind": "function",
+      "section": "Client",
+      "description": "Returns the logged-in user's profile inside a React component.\n\n**Prerequisite:** Auth0Provider must wrap the component tree.",
+      "signature": "useUser(): { ... }",
+      "parameters": [],
+      "returns": {
+        "type": "{ ... }",
+        "description": "`{ user, isLoading, error, invalidate }`. `user` is `null` when logged out\nand `undefined` while loading. Call `invalidate()` to force a fresh profile fetch.\n\nSample `user` object:\n```json\n{\n  \"sub\": \"auth0|64b2e5f8a3c1d90012ef4567\",\n  \"name\": \"Jane Doe\",\n  \"nickname\": \"jane\",\n  \"given_name\": \"Jane\",\n  \"family_name\": \"Doe\",\n  \"picture\": \"https://cdn.auth0.com/avatars/jd.png\",\n  \"email\": \"jane@example.com\",\n  \"email_verified\": true,\n  \"org_id\": \"org_abc123\"\n}\n```"
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "tsx",
+          "code": "// components/profile.tsx\nimport { useUser } from '@auth0/nextjs-auth0/client';\n\nexport default function Profile() {\n  const { user, isLoading, error } = useUser();\n\n  if (isLoading) return <p>Loading...</p>;\n  if (error)     return <p>Error: {error.message}</p>;\n  if (!user)     return <a href=\"/auth/login\">Log in</a>;\n\n  return <p>Welcome, {user.name}</p>;\n  //                      ^ \"Jane Doe\"\n}"
+        }
+      ]
+    },
+    "client-get-access-token": {
+      "id": "client-get-access-token",
+      "title": "getAccessToken",
+      "kind": "function",
+      "section": "Client",
+      "description": "",
+      "signature": "getAccessToken(options: AccessTokenOptions & { ... }): Promise<AccessTokenResponse>",
+      "parameters": [
+        {
+          "name": "options",
+          "type": "AccessTokenOptions & { ... }",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<AccessTokenResponse>",
+        "description": ""
+      }
+    },
+    "client-with-page-auth-required": {
+      "id": "client-with-page-auth-required",
+      "title": "withPageAuthRequired",
+      "kind": "constant",
+      "section": "Client",
+      "description": "Protects a React page. Unauthenticated users are automatically redirected to login\nand returned to the same page afterwards. The wrapped component always receives a\n`user` prop containing the logged-in user's profile.\n\n**Prerequisite:** Auth0 login route (`/auth/login`) must be configured.",
+      "type": "WithPageAuthRequired"
+    },
+    "generate-session-cookie": {
+      "id": "generate-session-cookie",
+      "title": "generateSessionCookie",
+      "kind": "function",
+      "section": "Testing",
+      "description": "Creates an encrypted session cookie that simulates a logged-in user in tests,\nbypassing the real Auth0 login flow entirely.\n\nSet the returned string as the `appSession` cookie on your test HTTP requests\nto make the SDK treat the request as authenticated.\n\n**Prerequisite:** `config.secret` must match the `AUTH0_SECRET` in your SDK\nconfiguration, otherwise the SDK will reject the cookie as invalid.",
+      "signature": "generateSessionCookie(session: Partial<SessionData>, config: GenerateSessionCookieConfig): Promise<string>",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "Partial<SessionData>",
+          "optional": false,
+          "description": "Session data to encode. `user` is required; `internal` is auto-populated."
+        },
+        {
+          "name": "config",
+          "type": "GenerateSessionCookieConfig",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": {
+        "type": "Promise<string>",
+        "description": "The encrypted cookie string. Expires 1 hour from the time of generation."
+      },
+      "examples": [
+        {
+          "title": "",
+          "language": "ts",
+          "code": "import { generateSessionCookie } from '@auth0/nextjs-auth0/testing';\n\nconst cookie = await generateSessionCookie(\n  {\n    user: {\n      sub:            'auth0|64b2e5f8a3c1d90012ef4567',\n      name:           'Jane Doe',\n      email:          'jane@example.com',\n      email_verified: true\n    },\n    tokenSet: {\n      accessToken: 'test-access-token',\n      expiresAt:   Math.floor(Date.now() / 1000) + 3600\n    }\n  },\n  { secret: process.env.AUTH0_SECRET! }\n);\n// \"Fe26.2**abc123...\" (encrypted cookie string)\n\n// Pass it in your test request to simulate an authenticated user:\nconst res = await fetch('/api/protected', {\n  headers: { Cookie: `appSession=${cookie}` },\n});"
+        }
+      ]
+    }
+  }
+}
